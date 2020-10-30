@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
+    require_once('connect.php');
     $result = $conn->query('SELECT * FROM pracownicy');
         echo("<table border=1>");
         echo("<th>Id</th>"); 
