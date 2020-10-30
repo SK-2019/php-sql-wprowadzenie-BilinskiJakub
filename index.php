@@ -15,7 +15,8 @@
 
         echo("</table>");
         $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
-    $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
+        $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
+        echo("<table border=1>");
         echo("<th>Id</th>"); 
         echo("<th>Imie</th>");
         echo("<th>Dzial</th>");
