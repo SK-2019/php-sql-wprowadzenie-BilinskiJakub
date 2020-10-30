@@ -14,7 +14,7 @@
             }
 
         echo("</table>");
-        $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
+        
         $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
         echo("<table border=1>");
         echo("<th>Id</th>"); 
@@ -29,7 +29,7 @@
             }
 
         echo("</table>");
-        $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
+         
     $result = $conn->query('SELECT * FROM pracownicy where (dzial=1 or dzial=3)'); 
         echo("<table border=1>");
         echo("<th>Id</th>"); 
@@ -44,7 +44,7 @@
             }
 
         echo("</table>");
-        $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
+        
         $result = $conn->query('SELECT * FROM pracownicy where imie not like "%a" and zarobki>15'); 
             echo("<table border=1>");
             echo("<th>Id</th>"); 
@@ -59,7 +59,7 @@
                 }
     
             echo("</table>");
-            $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");  
+            
             $result = $conn->query('SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"'); 
                 echo("<table border=1>");
                 echo("<th>Id</th>"); 
