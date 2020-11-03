@@ -67,7 +67,7 @@
         echo("</table>");
         
 
-        echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like "%a" and zarobki>15 </h1>");
+        echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like '%a' and zarobki>15 </h1>");
 
         $result = $conn->query('SELECT * FROM pracownicy where imie not like "%a" and zarobki>15'); 
             echo("<table border=1>");
@@ -85,7 +85,7 @@
             echo("</table>");
             
 
-            echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"</h1>");
+            echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like '%a'</h1>");
 
             $result = $conn->query('SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"'); 
                 echo("<table border=1>");
