@@ -34,7 +34,7 @@
         echo("</table>");
         
 
-        echo("<h1> Zadanie nr 2  |  SELECT * FROM pracownicy where imie like "%a"</h1>");
+        echo("<h1> Zadanie nr 2  |  SELECT * FROM pracownicy where imie like "%a" </h1>");
         $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
         echo("<table border=1>");
         echo("<th>Id</th>"); 
@@ -51,7 +51,7 @@
         echo("</table>");
         
         
-        echo("<h1> Zadanie nr 3  |  SELECT * FROM pracownicy where (dzial=1 or dzial=3)</h1>");
+        echo("<h1> Zadanie nr 3  |  SELECT * FROM pracownicy where (dzial=1 or dzial=3) </h1>");
         $result = $conn->query('SELECT * FROM pracownicy where (dzial=1 or dzial=3)'); 
         echo("<table border=1>");
         echo("<th>Id</th>"); 
@@ -68,7 +68,7 @@
         echo("</table>");
         
 
-        echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like "%a" and zarobki>15</h1>");
+        echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like "%a" and zarobki>15 </h1>");
         $result = $conn->query('SELECT * FROM pracownicy where imie not like "%a" and zarobki>15'); 
             echo("<table border=1>");
             echo("<th>Id</th>"); 
@@ -85,7 +85,7 @@
             echo("</table>");
             
 
-            echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"");
+            echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"</h1>");
             $result = $conn->query('SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"'); 
                 echo("<table border=1>");
                 echo("<th>Id</th>"); 
