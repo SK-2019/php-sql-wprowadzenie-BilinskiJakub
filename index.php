@@ -16,7 +16,7 @@
    echo("<h1> Zadanie nr 1  |  SELECT * FROM pracownicy </h1>");
 
     require_once('connect.php');
-    $result = $conn->query('SELECT * FROM pracownicy');
+    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja');
         echo("<table border=1>");
         echo("<th>Id</th>"); 
         echo("<th>Imie</th>");
@@ -33,74 +33,74 @@
 
         echo("<h1> Zadanie nr 2  |  SELECT * FROM pracownicy where imie like '%a' </h1>");
 
-        $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
+        $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org imie like "%a"'); 
         echo("<table border=1>");
         echo("<th>Id</th>"); 
         echo("<th>Imie</th>");
         echo("<th>Dzial</th>");
         echo("<th>Zarobki</th>");
-           while($row=$result->fetch_assoc()){ 
-              echo("<tr>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
 
-                 echo("</tr>");
-             }
+                echo("</tr>");
+            }
 
         echo("</table>");
         
         
-         echo("<h1> Zadanie nr 3  |  SELECT * FROM pracownicy where (dzial=1 or dzial=3) </h1>");
+        echo("<h1> Zadanie nr 3  |  SELECT * FROM pracownicy where (dzial=1 or dzial=3) </h1>");
 
-         $result = $conn->query('SELECT * FROM pracownicy where (dzial=1 or dzial=3)'); 
-         echo("<table border=1>");
-         echo("<th>Id</th>"); 
-         echo("<th>Imie</th>");
-         echo("<th>Dzial</th>");
-         echo("<th>Zarobki</th>");
-             while($row=$result->fetch_assoc()){ 
-                 echo("<tr>");
-                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
+        $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org (dzial=1 or dzial=3)'); 
+        echo("<table border=1>");
+        echo("<th>Id</th>"); 
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+        echo("<th>Zarobki</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
 
-                 echo("</tr>");
-             }
+                echo("</tr>");
+            }
 
-         echo("</table>");
+        echo("</table>");
         
 
-         echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like '%a' and zarobki>15 </h1>");
+        echo("<h1> Zadanie nr 4  |  SELECT * FROM pracownicy where imie not like '%a' and zarobki>15 </h1>");
 
-         $result = $conn->query('SELECT * FROM pracownicy where imie not like "%a" and zarobki>15'); 
-             echo("<table border=1>");
-             echo("<th>Id</th>"); 
-             echo("<th>Imie</th>");
-             echo("<th>Dzial</th>");
-             echo("<th>Zarobki</th>");
-                 while($row=$result->fetch_assoc()){ 
-                     echo("<tr>");
-                         echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
+        $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org imie not like "%a" and zarobki>15'); 
+            echo("<table border=1>");
+            echo("<th>Id</th>"); 
+            echo("<th>Imie</th>");
+            echo("<th>Dzial</th>");
+            echo("<th>Zarobki</th>");
+                while($row=$result->fetch_assoc()){ 
+                    echo("<tr>");
+                        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
     
-                     echo("</tr>");
-                 }
+                    echo("</tr>");
+                }
     
-             echo("</table>");
+            echo("</table>");
             
 
-             echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like '%a'</h1>");
+            echo("<h1> Zadanie nr 5  |  SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like '%a'</h1>");
 
-             $result = $conn->query('SELECT * FROM pracownicy where zarobki between 10 and 20 and imie like "%a"'); 
-                 echo("<table border=1>");
-                 echo("<th>Id</th>"); 
-                 echo("<th>Imie</th>");
-                 echo("<th>Dzial</th>");
-                 echo("<th>Zarobki</th>");
-                     while($row=$result->fetch_assoc()){ 
+            $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org zarobki between 10 and 20 and imie like "%a"'); 
+                echo("<table border=1>");
+                echo("<th>Id</th>"); 
+                echo("<th>Imie</th>");
+                echo("<th>Dzial</th>");
+                echo("<th>Zarobki</th>");
+                    while($row=$result->fetch_assoc()){ 
                         echo("<tr>");
                             echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>"); 
         
-                         echo("</tr>");
-                     }
+                        echo("</tr>");
+                    }
         
-                 echo("</table>");
+                echo("</table>");
 ?>
 
 </body>
