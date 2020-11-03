@@ -16,7 +16,7 @@
    echo("<h1> Zadanie nr 1  |  SELECT * FROM pracownicy </h1>");
 
     require_once('connect.php');
-    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja');
+    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org');
         echo("<table border=1>");
         echo("<th>Id</th>"); 
         echo("<th>Imie</th>");
