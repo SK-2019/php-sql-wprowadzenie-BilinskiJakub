@@ -31,7 +31,7 @@
 
         echo("</table>");
 
-        echo("<h1> Zadanie nr 2  |  SELECT * FROM pracownicy where imie like "%a" </h1>");
+        echo("<h1> Zadanie nr 2  |  SELECT * FROM pracownicy where imie like '%a' </h1>");
 
         $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"'); 
         echo("<table border=1>");
