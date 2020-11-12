@@ -20,7 +20,7 @@
 <?php
 
 require("connect.php");
-echo("<h2>Wiek poszczególnych pracowników</h2>");
+echo("<h2>Wiek poszczególnych pracowników | SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h2>");
     $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -34,7 +34,7 @@ echo("<h2>Wiek poszczególnych pracowników</h2>");
             echo("</table>");
 
 require("connect.php");
-echo("<h2>Wiek poszczególnych pracowników z działu serwis</h2>");
+echo("<h2>Wiek poszczególnych pracowników z działu serwis | SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1</h2>");
     $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1');
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -49,7 +49,7 @@ echo("<h2>Wiek poszczególnych pracowników z działu serwis</h2>");
             echo("</table>");
 
 require("connect.php");
-echo("<h2>Suma lat wszystkich pracowników</h2>");
+echo("<h2>Suma lat wszystkich pracowników | SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy</h2>");
     $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy');
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -64,7 +64,7 @@ echo("<h2>Suma lat wszystkich pracowników</h2>");
             echo("</table>");
 
 require("connect.php");
- echo("<h2>Suma lat pracowników z działu handel</h2>");
+ echo("<h2>Suma lat pracowników z działu handel | SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"</h2>");
      $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"');
         echo("<table border=1>");
         echo("<th>Imie</th>");
