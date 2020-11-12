@@ -21,9 +21,7 @@
 
 require("connect.php");
 $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy';
-    echo("<h1>$sql</h1")
-echo("<h2>Wiek poszczególnych pracowników | SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy</h2>");
-    $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy');
+    echo("<h1>$sql</h1");
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Wiek</th>");
@@ -36,8 +34,8 @@ echo("<h2>Wiek poszczególnych pracowników | SELECT *, YEAR(curdate())-YEAR(dat
             echo("</table>");
 
 require("connect.php");
-    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1';
-    echo("<h1>$sql</h1")
+$sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1';
+echo("<h1>$sql</h1");
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Data Urodzenia</th>");
@@ -67,9 +65,8 @@ echo("<h1>$sql</h2>");
             echo("</table>");
 
 require("connect.php");
- $sql = 'SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"';
+$sql = 'SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"';
 echo("<h1>$sql</h1>");
-     $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"');
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Data Urodzenia</th>");
