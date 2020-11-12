@@ -50,30 +50,30 @@ echo("<h2>Wiek poszczególnych pracowników z działu serwis</h2>");
 
 require("connect.php");
 echo("<h2>Suma lat wszystkich pracowników</h2>");
-    $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Wiek from pracownicy');
+    $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy');
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Data Urodzenia</th>");
         echo("<th>Wiek<th>");
             while($row=$result->fetch_assoc()){
              echo("<tr>");
-                echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]);
+                echo("<td>".$row["suma_m"]."</td>");
              echo("<tr>");
             
             }
             echo("</table>");
 
-            require("connect.php");
-            echo("<h2>Suma lat pracowników z działu handel</h2>");
-                $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"');
-                    echo("<table border=1>");
-                    echo("<th>Imie</th>");
-                    echo("<th>Data Urodzenia</th>");
-                    echo("<th>Wiek<th>");
-                        while($row=$result->fetch_assoc()){
-                         echo("<tr>");
-                            echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]);
-                         echo("<tr>");
+require("connect.php");
+ echo("<h2>Suma lat pracowników z działu handel</h2>");
+     $result = $conn->query('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"');
+        echo("<table border=1>");
+        echo("<th>Imie</th>");
+        echo("<th>Data Urodzenia</th>");
+        echo("<th>Wiek<th>");
+            while($row=$result->fetch_assoc()){
+             echo("<tr>");
+                echo("<td>".$row["avg_age"]."</td><td>".$row["nazwa_dzial"]."</td>");
+             echo("<tr>");
                         
                         }
                         echo("</table>");
