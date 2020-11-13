@@ -84,7 +84,6 @@ $sql = ('SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial =
          }
     echo("</table>");
 
-echo("<h1> SORTOWANIE </h1>");
 
 require("connect.php");
 $sql = ('SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org order by imie desc');
@@ -169,7 +168,6 @@ $result = $conn->query($sql);
          }
          echo("</table>");
 
-echo("<h1> LIMIT <h1>");
 
 require("connect.php");
 $sql = ("SELECT * FROM pracownicy, organizacja WHERE dzial=id_org and dzial=4 ORDER BY zarobki asc LIMIT 2");
