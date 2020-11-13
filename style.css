@@ -2,6 +2,7 @@ body {
     background-color: royalblue;
     display:flex;
     flex-direction:column;
+    align-items:flex-start;
     }
 h2{
     color: black;
@@ -23,7 +24,12 @@ table{
 }
 
 th{
-    background-color:red;
-    color:pink    ;
+    background-color:#4CAF50;
+    color: white     ;
      
+}
+
+td{
+    text-align: center;
+    
 }
