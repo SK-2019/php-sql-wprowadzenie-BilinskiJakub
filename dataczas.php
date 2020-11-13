@@ -19,54 +19,57 @@
     
 <?php
 
-require("connect.php");
+
 echo("<h2>Zad1</h2>");
  $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org)";
-echo("<h3>".$sql."</h3>");
-$conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
- $result=$conn->query($sql);
+    echo("<h3>".$sql."</h3>");
+    $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
+    $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>nazwa_dzial</th>");
         echo("<th>imie</th>");
         echo("<th>wiek</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td><td>".$row["wiek"]."</td>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
         echo("</table>");
 
-require("connect.php");
-$sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1';
-echo("<h1>$sql</h1");
-$result = $conn->query($sql);
-        echo("<table border=1>");
-        echo("<th>Imie</th>");
-        echo("<th>Data Urodzenia</th>");
-        echo("<th>Wiek<th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]);
-                echo("<tr>");
-                
-            }
-            echo("</table>");
 
-require("connect.php");
-$sql = 'SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy';
-echo("<h1>$sql</h2>");
-$result = $conn->query($sql);
-        echo("<table border=1>");
-        echo("<th>Imie</th>");
-        echo("<th>Data Urodzenia</th>");
-        echo("<th>Wiek<th>");
-            while($row=$result->fetch_assoc()){
-             echo("<tr>");
-                echo("<td>".$row["suma_m"]."</td>");
-             echo("<tr>");
-            
-            }
-            echo("</table>");
+echo("<h2>Zad2</h2>");
+ $sql = ("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial="serwis);
+    echo("<h3>".$sql."</h3>");
+    $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
+    $result=$conn->query($sql);
+                echo("<table border=1>");
+                echo("<th>nazwa_dzial</th>");
+                echo("<th>imie</th>");
+                echo("<th>wiek</th>");
+                    while($row=$result->fetch_assoc()) {
+                        echo("<tr>");
+                            echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                        echo("</tr>");
+                    }
+                echo("</table>");
+
+
+echo("<h2>Zad3</h2>");
+ $sql = ("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as SumaLat from pracownicy");
+
+    echo("<h3>".$sql."</h3>");
+    $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
+    $result=$conn->query($sql);
+                echo("<table border=1>");
+                echo("<th>nazwa_dzial</th>");
+                echo("<th>imie</th>");
+                echo("<th>wiek</th>");
+                    while($row=$result->fetch_assoc()) {
+                        echo("<tr>");
+                            echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                        echo("</tr>");
+                    }
+                echo("</table>");
 
 require("connect.php");
 $sql = 'SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial="handel"';
@@ -81,8 +84,8 @@ $result = $conn->query($sql);
                 echo("<td>".$row["avg_age"]."</td><td>".$row["nazwa_dzial"]."</td>");
              echo("<tr>");
                         
-                        }
-                        echo("</table>");
+                    }
+                echo("</table>");
             
 ?>
 
