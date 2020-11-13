@@ -20,19 +20,21 @@
 <?php
 
 require("connect.php");
-$sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy';
-echo("<h1>$sql</h1");
-$result = $conn->query($sql);   
-    echo("<table border=1>");
-        echo("<th>Imie</th>");
-        echo("<th>Wiek</th>");
-            while($row=$result->fetch_assoc()){
+echo("<h2>Zad1</h2>");
+ $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org)";
+echo("<h3>".$sql."</h3>");
+$conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
+ $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>imie</th>");
+        echo("<th>wiek</th>");
+            while($row=$result->fetch_assoc()) {
                 echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td>");
-                echo("<tr>");
-                
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["imie"]."</td><td>".$row["wiek"]."</td>");
+                echo("</tr>");
             }
-            echo("</table>");
+        echo("</table>");
 
 require("connect.php");
 $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM `pracownicy`, `organizacja` WHERE dzial = id_org AND dzial=1';
