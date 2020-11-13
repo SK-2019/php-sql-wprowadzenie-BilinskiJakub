@@ -38,7 +38,7 @@ echo("<h2>Zad1</h2>");
 
 
 echo("<h2>Zad2</h2>");
- $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial=serwis";
+ $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'";
     echo("<h3>".$sql."</h3>");
     $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
     $result=$conn->query($sql);
