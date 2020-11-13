@@ -26,9 +26,9 @@ echo("<h2>Zad1</h2>");
     $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
     $result=$conn->query($sql);
         echo("<table border=1>");
-        echo("<th>nazwa_dzial</th>");
         echo("<th>imie</th>");
         echo("<th>wiek</th>");
+        echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc()) {
                 echo("<tr>");
                     echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
@@ -43,9 +43,9 @@ echo("<h2>Zad2</h2>");
     $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");
     $result=$conn->query($sql);
                 echo("<table border=1>");
-                echo("<th>nazwa_dzial</th>");
                 echo("<th>imie</th>");
                 echo("<th>wiek</th>");
+                echo("<th>nazwa_dzial</th>");
                     while($row=$result->fetch_assoc()) {
                         echo("<tr>");
                             echo("<td>".$row["imie"]."</td><td>".$row["wiek"]."</td><td>".$row["nazwa_dzial"]."</td>");
