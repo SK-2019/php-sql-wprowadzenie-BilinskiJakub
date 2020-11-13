@@ -1,4 +1,29 @@
 body {
-    background-color:royalblue;
+    background-color: royalblue;
+    display:flex;
+    flex-direction:column;
+    }
+h2{
+    color: black;
+    
 }
 
+h3{
+    color: black;
+}
+
+nav{
+    color: black;
+    
+}
+
+table{
+    color: black;
+    
+}
+
+th{
+    background-color:red;
+    color:pink    ;
+     
+}
