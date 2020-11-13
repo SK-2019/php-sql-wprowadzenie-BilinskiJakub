@@ -33,3 +33,5 @@ td{
     text-align: center;
     
 }
+tr:nth-child(even){background-color: #fae900;}
+tr:hover{background-color:rgb(240, 137, 62);}
