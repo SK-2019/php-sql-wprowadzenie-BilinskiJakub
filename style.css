@@ -17,8 +17,12 @@ h3{
 }
 
 nav{
-    color: black;
-    
+    color:gray;
+
+    display: flex;
+    justify-content: space-around;
+
+}
 }
 
 table{
