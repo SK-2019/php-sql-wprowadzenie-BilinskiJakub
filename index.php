@@ -21,6 +21,8 @@
 
 </div>
 <h1> Jakub Biliński</h1>
+<h2> 2Ti </h2>
+<h3> Nr 2 </h3>
 <?php
 
 require("connect.php");
