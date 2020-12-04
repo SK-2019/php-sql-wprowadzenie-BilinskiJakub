@@ -43,3 +43,7 @@ td{
 tr:nth-child(even){background-color:rgba(155, 150, 146, 0.836)
     ;}
 tr:hover{background-color:rgb(94, 93, 92);}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
