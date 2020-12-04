@@ -22,7 +22,7 @@
 </div>
 <?php
 
-require("connect2.php");
+require("connect.php");
 $sql = ('SELECT * FROM bibliotekaAutor');
 echo("<h2>Autorzy</h2>");
 echo("<h3>".$sql."</h3>");
@@ -40,7 +40,7 @@ echo("<h3>".$sql."</h3>");
 
     echo("</table>");
 
-require("connect2.php");
+require("connect.php");
 $sql = ('SELECT * FROM bibliotekaTytuł');
 echo("<h2>Tytuły</h2>");
 echo("<h3>".$sql."</h3>");
@@ -58,7 +58,7 @@ echo("<h3>".$sql."</h3>");
 
     echo("</table>");
 
-require("connect2.php");
+require("connect.php");
 $sql = ('SELECT * FROM `bibliotekaAT`, `bibliotekaAutor`, `bibliotekaTytuł` WHERE id_autor = bibliotekaAutor_ID AND id_tytuł = bibliotekaTytul_ID');
 echo("<h2>Dane w Bibliotece</h2>");
 echo("<h3>".$sql."</h3>");
