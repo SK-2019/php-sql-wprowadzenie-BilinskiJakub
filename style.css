@@ -78,19 +78,38 @@ tr:hover{background-color:rgb(94, 93, 92);}
   }
   
   .colorRed {
-    background-color: red;
-    width: 100%
+    background-color: rgb(184, 64, 64);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   
   .colorBlue {
-    background-color: rgb(50, 7, 207);
-    width: 20%
+    background-color: rgb(146, 86, 202);
+    width: auto;
+    max-width: 20%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: column;
+    flex-direction: column
+    
   
   
   }
   
   .colorGreen {
-    background-color: lime;
-    width: 76%;
+    background-color: rgb(28, 77, 26);
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    overflow: hidden;
+    
+    
+    
+  
+  }
   
   }
