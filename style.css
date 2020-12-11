@@ -14,11 +14,11 @@
 
 
 
-.body {
+body {
 
     background: gray;
     }
-.nav{
+nav{
     color:gray;
 
     display: flex;
@@ -26,19 +26,19 @@
 
 }
 
-.table{
+table{
     color: black;
     
 }
 
-.th{
+th{
     background-color:#4CAF50;
     color: white     ;
     text-align: center;
      
 }
 
-.td{
+td{
     text-align: center;
     
 }
@@ -102,4 +102,4 @@
   
   }
   
-  
+  }
