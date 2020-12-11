@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Biblioteka</title>
+    <title>biblioteka</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<div class=nav>
+    <div class="container">
+      <div class="item colorRed">
+        Jakub Biliński 
+    </div>
+        <div class=nav>
+        <div class="item colorBlue">
     <a href="pracownicy.php">Pracownicy</a>
     <a href="organizacja.php">Pracownicy i Organizacja</a>
     <a href="funkcje.php">Funkcje Agregujące</a>
@@ -22,6 +27,7 @@
 
 
 </div>
+<div class="item colorGreen">
 <?php
 
 require("connect.php");
@@ -81,6 +87,6 @@ echo("<h3>".$sql."</h3>");
 
 
 ?>
-    
+ </div>   
 </body>
 </html>

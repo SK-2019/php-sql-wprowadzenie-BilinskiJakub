@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="item colorRed">
+    Jakub Biliński
+</div>
+<div class="item colorBlue">
 <div class=nav>
     <a href="pracownicy.php">Pracownicy</a>
     <a href="organizacja.php">Pracownicy i Organizacja</a>
@@ -23,9 +28,7 @@
 
 
 </div>
-<h1> Jakub Biliński</h1>
-<h1> 2Ti </h1>
-<h1> Nr 2 </h1>
+<div class="item colorGreen">
 <?php
 
 require("connect.php");
@@ -201,37 +204,7 @@ $result = $conn->query('SELECT avg(zarobki) as az FROM pracownicy, organizacja W
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
-    
+  </div>  
 </body>
 </html>
