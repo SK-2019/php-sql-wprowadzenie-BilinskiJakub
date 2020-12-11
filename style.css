@@ -104,9 +104,11 @@ tr:hover{background-color:rgb(94, 93, 92);}
     background-color: rgb(28, 77, 26);
     width: auto;
     max-width: 70%;
+    display: flex;
     height: auto;
+    align-items: center;
     overflow: hidden;
-    
+    flex-direction: column;
     
     
   
