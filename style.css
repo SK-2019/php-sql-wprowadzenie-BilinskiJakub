@@ -43,7 +43,43 @@ td{
 tr:nth-child(even){background-color:rgba(155, 150, 146, 0.836)
     ;}
 tr:hover{background-color:rgb(94, 93, 92);}
+
 .center {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .title {
+    color: blue;
+  }
+  
+  .container {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+  
+  }
+  
+  .colorRed {
+    background-color: red;
+    width: 100%
+  }
+  
+  .colorBlue {
+    background-color: rgb(50, 7, 207);
+    width: 20%
+  
+  
+  }
+  
+  .colorGreen {
+    background-color: lime;
+    width: 76%;
+  
   }

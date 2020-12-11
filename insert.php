@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+    <title>Insert</title>
 </head>
 <body>
 
@@ -13,11 +13,11 @@
     <a href="organizacja.php">Pracownicy i Organizacja</a>
     <a href="funkcje.php">Funkcje Agregujące</a>
     <a href="dataczas.php">Data i Czas</a>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub">Github</a>
     <a href="formularz.html">Zakładka testowa</a>
     <a href="daneDoBazy.php">Dane Do Bazy</a>
     <a href="biblioteka.php">Książki</a>
-    
+    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub">Github</a>
+
 
 
 </div>
