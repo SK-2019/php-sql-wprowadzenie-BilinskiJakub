@@ -4,11 +4,20 @@
     
 }
 
+
+.header {
+background-color: red;
+display: flex;
+
+}
+
+
+
 .container {
     background-color: rosybrown;
     display: flex;
-    flex-wrap: wrap;
-
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -66,12 +75,13 @@ td{
   }
   
   .colorRed {
-    background-color: rgb(184, 64, 64);
+    background-color:red;
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    
   }
   
   .colorBlue {
@@ -82,8 +92,8 @@ td{
     overflow: hidden;
     display: flex;
     align-items: column;
-    flex-direction: column
-    
+    flex-direction: column;
+   
   
   
   }
@@ -97,9 +107,8 @@ td{
     align-items: center;
     overflow: hidden;
     flex-direction: column;
-    
-    
+    justify-content: flex-start;
   
   }
   
-  }
+  
