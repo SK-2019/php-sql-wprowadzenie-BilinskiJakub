@@ -24,7 +24,7 @@
 </div>
 <?php
 
-require("connect.php");
+require_once("/assets/connect.php");
 echo("<h2>Suma zarobków wszystkich pracowników</h2>");
 $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy');
     echo("<table border=1>");
@@ -38,7 +38,6 @@ $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy');
          }
          echo("</table>");
 
-require("connect.php");
 echo("<h2>Suma zarobków wszystkich kobiet</h2>");
 $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy WHERE imie like "%a"');
     echo("<table border=1>");
@@ -52,7 +51,7 @@ $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy WHER
          }
          echo("</table>");
 
-require("connect.php");
+
 echo("<h2>Suma zarobów mężczyzn pracujących w działach 2 i 3</h2>");
 $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy WHERE (dzial=2 or dzial=3) AND imie not like "%a"');
     echo("<table border=1>");
@@ -66,7 +65,6 @@ $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy WHER
          }
          echo("</table>");
 
-require("connect.php");
 echo("<h2>średnia zarobków wszystkich mężczyzn</h2>");
 $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy where imie not like "%a"');
     echo("<table border=1>");
@@ -80,7 +78,7 @@ $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy where
          }
          echo("</table>");
 
-require("connect.php");
+
 echo("<h2>Średnia zarobków pracowników z działu 4</h2>");
 $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy WHERE (dzial=4)');
     echo("<table border=1>");
@@ -95,7 +93,7 @@ $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy WHERE
          echo("</table>");
 
 
-require("connect.php");
+
 echo("<h2>Średnia zarobków mężczyzn z działów 1 i 2</h2>");
 $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy WHERE (dzial=1 or dzial=2) AND imie not like "%a"');
     echo("<table border=1>");
@@ -109,7 +107,6 @@ $result = $conn->query('SELECT AVG(zarobki) as avg_zarobki FROM pracownicy WHERE
          }
          echo("</table>");
 
-require("connect.php");
 echo("<h2>Ilu jest pracowników</h2>");
 $result = $conn->query('SELECT COUNT(imie) as liczba_pracownikow FROM pracownicy ');
     echo("<table border=1>");
@@ -123,7 +120,7 @@ $result = $conn->query('SELECT COUNT(imie) as liczba_pracownikow FROM pracownicy
          }
          echo("</table>");
 
-require("connect.php");
+
 echo("<h2>Ile Kobiet pracuje łącnznie w działach 1 i 3</h2>");
 $result = $conn->query('SELECT COUNT(imie) as liczba_pracownikow FROM pracownicy WHERE (dzial=1 or dzial=3) and imie like "%a"');
     echo("<table border=1>");

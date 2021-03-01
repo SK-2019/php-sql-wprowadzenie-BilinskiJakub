@@ -19,7 +19,7 @@
         </div>
         <div class="item a">
 <?php
-require_once("../inne/connect.php");
+require_once("assets/connect.php");
 $sql ="Select * From biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id";
 echo("<li>".$sql);
 $result = $conn->query($sql);
