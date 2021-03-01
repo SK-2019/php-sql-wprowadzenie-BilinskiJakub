@@ -29,7 +29,7 @@
 <div class="item colorGreen">
 <?php
 
-require_once("/assets/connect.php");
+require_once("/Assets/connect.php");
 $sql = ('SELECT * FROM bibliotekaAutor');
 echo("<h2>Autorzy</h2>");
 echo("<h3>".$sql."</h3>");
