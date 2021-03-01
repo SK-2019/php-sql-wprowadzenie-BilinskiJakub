@@ -20,7 +20,7 @@
     <a href="funkcje.php">Funkcje Agregujące</a>
     <a href="dataczas.php">Data i Czas</a>
     <a href="formularz.html">Zakładka testowa</a>
-    <a href="daneDoBazy.php">Dane Do Bazy</a>
+    <a href="DaneDoBazy.php">Dane Do Bazy</a>
     <a href="biblioteka.php">Książki</a>
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub">Github</a>
 
@@ -63,7 +63,7 @@ $sql = 'SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organ
             while($row=$result->fetch_assoc()){ 
             echo("<tr>");
                 echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");  
-
+            
             echo("</tr>");
         }
 

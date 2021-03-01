@@ -1,114 +1,51 @@
-.title {
-    color: rgb(221, 80, 80);
-    align-items: center;
-    
+*{
+  margin:0px;
+  padding:0px;
 }
-
-
-.header {
-background-color: red;
-display: flex;
-
+.con{
+  height: 100%;
+  width:100%;
+  background:rgb(158, 110, 111);
 }
-
-
-
-.container {
-    background-color: rosybrown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+  background:rgb(158, 110, 111);
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-
-
-
-body {
-
-    background: gray;
-    }
-nav{
-    color:gray;
-
-    display: flex;
-    justify-content: space-around;
-
+table, th, td{
+  border:1px solid rgb(71, 1, 1);
 }
-
 table{
-    color: black;
-    
+  background-color:grey;
 }
-
 th{
-    background-color:#4CAF50;
-    color: white     ;
-    text-align: center;
-     
+  text-align: center;
+  background-color:#530606;
 }
-
-td{
-    text-align: center;
-    
+tr:nth-child(even){background-color: #e78282;}
+tr:hover{background-color:rgb(151, 86, 39);}
+.item{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .title {
-    color: blue;
-  }
-  
-  .container {
-    background-color: lightgray;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .item {
-    width: 200px;
-    height: 100px;
-    margin: 10px;
-  
-  }
-  
-  .colorRed {
-    background-color:red;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-  
-  .colorBlue {
-    background-color: rgb(146, 86, 202);
-    width: auto;
-    max-width: 20%;
-    height: fit-content;
-    overflow: hidden;
-    display: flex;
-    align-items: column;
-    flex-direction: column;
-   
-  
-  
-  }
-  
-  .colorGreen {
-    background-color: rgb(28, 77, 26);
-    width: auto;
-    max-width: 70%;
-    display: flex;
-    height: auto;
-    align-items: center;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: flex-start;
-  
-  }
-  
-  
+.link{
+  text-decoration: none;
+  padding:1rem;
+  background:rgb(170, 116, 116);
+  color:rgb(41, 43, 124);
+}
+.nav{
+  display:flex;
+  justify-content: center;
+}
+.link:hover{
+  background:rgba(220, 20, 60, 0.151);
+}
+.formularz{
+  height:75px;
+  width:300px;
+  background:rgb(173, 156, 206);
+}
