@@ -1,0 +1,51 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.con{
+  height: 100%;
+  width:100%;
+  background:rgb(158, 110, 111);
+}
+body{
+  background:rgb(158, 110, 111);
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+table, th, td{
+  border:1px solid rgb(71, 1, 1);
+}
+table{
+  background-color:grey;
+}
+th{
+  text-align: center;
+  background-color:#530606;
+}
+tr:nth-child(even){background-color: #e78282;}
+tr:hover{background-color:rgb(151, 86, 39);}
+.item{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.link{
+  text-decoration: none;
+  padding:1rem;
+  background:rgb(170, 116, 116);
+  color:rgb(41, 43, 124);
+}
+.nav{
+  display:flex;
+  justify-content: center;
+}
+.link:hover{
+  background:rgba(220, 20, 60, 0.151);
+}
+.formularz{
+  height:75px;
+  width:300px;
+  background:rgb(173, 156, 206);
+}
