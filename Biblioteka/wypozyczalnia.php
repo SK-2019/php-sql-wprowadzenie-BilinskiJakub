@@ -10,7 +10,7 @@ echo("<li>autor: ".$_POST['autor']);
 echo("<li>tytuł: ".$_POST['tytul']);
 
 
-require_once("/Assets/connect.php");
+require_once("Assets/connect.php");
 
 $sql = "INSERT INTO biblAutor_biblTytul(id, biblAutor_id, biblTytul_id) VALUES(null,'".$_POST['autor']."','".$_POST['tytul']."')";
 

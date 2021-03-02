@@ -24,7 +24,7 @@
 </div>
 <?php
 
-require_once("/Assets/connect.php");
+require_once("Assets/connect.php");
 echo("<h2>Suma zarobków wszystkich pracowników</h2>");
 $result = $conn->query('SELECT SUM(zarobki) as suma_zarobki FROM pracownicy');
     echo("<table border=1>");

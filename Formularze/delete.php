@@ -28,7 +28,7 @@
 
 echo("<h2> ID pracownika wybranego do usunięcia:".$_POST["id"]."</h2>"); 
 
-require_once("/Assets/connect.php");
+require_once("Assets/connect.php");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }

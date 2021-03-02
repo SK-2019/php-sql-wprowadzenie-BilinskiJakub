@@ -22,7 +22,7 @@
 </div>
 <?php
  
-require_once("/Assets/connect.php");
+require_once("Assets/connect.php");
 echo("<h2>Pracownicy z nazwą działów</h2>");
 $result = $conn->query('SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
     echo("<table border=1>");
