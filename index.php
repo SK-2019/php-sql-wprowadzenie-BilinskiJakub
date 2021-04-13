@@ -6,22 +6,22 @@
     <title>
     index
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Assets/style.css">
 </head>
 <body>
 
 </div>
 
 <div class="nav">
-         <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub" >GITHUB</a>
-            <a class="link b" href="index.php">Index</a>
-            <a class="link c" href="/Pracownicy/pracownicy.php">Pracownicy</a>
-            <a class="link d" href="/Pracownicy/organizacja.php">Pracownicy i Organizacja</a>
-            <a class="link e" href="/Pracownicy/funkcje.php">Funkcje agregujące</a>
-            <a class="link f" href="/Pracownicy/dataczas.php">Data i Czas</a>
-            <a class="link g" href="/Formularze/formularz.html">Formularz</a>
-            <a class="link h" href="/Formularze/DaneDoBazy.php">DaneDoBazy</a>
-            <a class="link i" href="/biblioteka/ksiazki.php">Książki</a>
+         <a class="menu" href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub" >GITHUB</a>
+            <a class="menu" href="index.php">Index</a>
+            <a class="menu" href="/Pracownicy/pracownicy.php">Pracownicy</a>
+            <a class="menu" href="/Pracownicy/organizacja.php">Pracownicy i Organizacja</a>
+            <a class="menu" href="/Pracownicy/funkcje.php">Funkcje agregujące</a>
+            <a class="menu" href="/Pracownicy/dataczas.php">Data i Czas</a>
+            <a class="menu" href="/Formularze/formularz.html">Formularz</a>
+            <a class="menu" href="/Formularze/DaneDoBazy.php">DaneDoBazy</a>
+            <a class="menu" href="/biblioteka/ksiazki.php">Książki</a>
         </div>
 
 

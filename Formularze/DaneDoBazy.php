@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/Assets/style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-BilinskiJakub"> GitHub </a>
 
    <div class="nav">
