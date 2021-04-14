@@ -31,7 +31,7 @@ tr:hover{background-color:rgb(151, 86, 39);}
   justify-content: center;
   flex-direction: column;
 }
-.link{
+.menu{
   text-decoration: none;
   padding:1rem;
   background:rgb(170, 116, 116);
@@ -39,9 +39,10 @@ tr:hover{background-color:rgb(151, 86, 39);}
 }
 .nav{
   display:flex;
-  justify-content: center;
+  justify-content: left;
+  flex-direction: column;
 }
-.link:hover{
+.menu:hover{
   background:rgba(220, 20, 60, 0.151);
 }
 .formularz{
