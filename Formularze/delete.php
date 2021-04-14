@@ -18,7 +18,7 @@
             <a class="menu" href="/Formularze/formularz.html">Formularz</a>
             <a class="menu" href="/Formularze/DaneDoBazy.php">DaneDoBazy</a>
             <a class="menu" href="/biblioteka/ksiazki.php">Książki</a>
-            <a class="menu" href="/Flexbox/index.html">Książki</a>
+            <a class="menu" href="/Flexbox/index.html">Flexbox</a>
         </div>
 
 
