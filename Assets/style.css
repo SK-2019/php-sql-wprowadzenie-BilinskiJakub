@@ -38,9 +38,18 @@ tr:hover{background-color:rgb(151, 86, 39);}
   color:rgb(41, 43, 124);
 }
 .nav{
+  float: left;
   display:flex;
   justify-content: left;
   flex-direction: column;
+}
+.topnav a {
+  float: left;
+  color: #d6a8a8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 .menu:hover{
   background:rgba(220, 20, 60, 0.151);
