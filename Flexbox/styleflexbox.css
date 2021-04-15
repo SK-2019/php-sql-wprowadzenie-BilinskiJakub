@@ -135,7 +135,7 @@ justify-content:center;
 .menu:hover {
     padding: 0.70rem;
     margin: 2px;
-    background-color: rgb(0, 151, 0);
+    background-color: rgb(209, 44, 135);
     text-decoration: none;
     color: black;
     
@@ -153,7 +153,7 @@ justify-content:center;
 .menu2:hover {
     padding: 1.10rem;
     margin: 2px;
-    background-color: pink;
+    background-color: rgb(177, 45, 67);
     text-decoration: none;
     color: black;
     
