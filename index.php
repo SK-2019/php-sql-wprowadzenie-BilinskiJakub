@@ -13,7 +13,7 @@
 </div>
 
 <div class="nav">
-        <?php include("../menu.php") ?>
+        <?php include("menu.php") ?>
 
 
 </div>
