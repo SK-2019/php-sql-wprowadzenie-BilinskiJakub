@@ -7,7 +7,7 @@
         <h1 class="title">Jakub Biliński</h1>
     </div>
     <div class="nav">
-        <?php include("menu.php") ?>    
+        <?php include("../menu.php") ?>    
         </div>
 
         <div class="item a">
