@@ -8,7 +8,7 @@
             <a class="menu" href="/Formularze/DaneDoBazy.php">DaneDoBazy</a>
             <a class="menu" href="/Biblioteka/ksiazki.php">Książki</a>
             <a class="menu" href="/Flexbox/index.html">Flexbox</a>
-            <a>Relacje:</a>
+            <a class="menu" href="">Relacje:</a>
             <a class="menu" href="/Relacje/autortytul.php">Autor-Tytuł</a>
             <a class="menu" href="/Relacje/nauczycielklasa.php">Nauczyciel-Klasa</a>
             <a class="menu" href="/Relacje/lekarzpacjent.php">Lekarz-Pacjent</a>
