@@ -22,7 +22,7 @@
         <div class="item c">
         <h1>Usuwanie Pracownika</h1>
         <?php
-                require_once("Assets/connect.php");
+                require_once("/Assets/connect.php");
                 $result=$conn->query("Select * from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");

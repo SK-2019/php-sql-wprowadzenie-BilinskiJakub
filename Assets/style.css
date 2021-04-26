@@ -2,6 +2,11 @@
   margin:0px;
   padding:0px;
 }
+  .title {
+    color: rgb(233, 84, 84);
+    align-items:center
+
+}
 .con{
   height: 100%;
   width:100%;
@@ -39,12 +44,24 @@ tr:hover{background-color:rgb(151, 86, 39);}
   background:rgb(170, 116, 116);
   color:rgb(41, 43, 124);
 }
+
+.header{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.container{
+  display: flex;
+
+}
 .nav{
   float: left;
   display:flex;
   justify-content: left;
   flex-direction: column;
 }
+
 .topnav a {
   float: left;
   color: #d6a8a8;

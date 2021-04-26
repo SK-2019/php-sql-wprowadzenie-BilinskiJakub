@@ -1,9 +1,20 @@
 <?php
 
+$hostname = $_SERVER['HTTP_HOST'];
+if ($hostname == 'localhost') {
+     require_once ("config.php");
+ }
 
-$conn = new mysqli('mysql-bilinski-jakub.alwaysdata.net','217212','haslo_testowe','bilinski-jakub_test');
+$servername = $_SERVER['servername'];
+$username = $_SERVER['username'];
+$password = $_SERVER['password'];
+$dbname = $_SERVER['dbname']; 
+
+
+$conn = new mysqli($_SERVER['servername'],$_SERVER['username'],$_SERVER['password'],$_SERVER['dbname']);
+
 
 if ($conn->connect_error) {
-  die("Connection failed: ".mysql_connect_error());
+  die("Connection failed: " . $conn->connect_error);
 }
 ?>
