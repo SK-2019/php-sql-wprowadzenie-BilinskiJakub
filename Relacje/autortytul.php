@@ -11,7 +11,7 @@
 <body>
 
 <div class="sidenav">
-         <?php include("menu.php") ?>
+         <?php include("../menu.php") ?>
         </div>
     <div class="container">
         <?php include("../Assets/header.php") ?>
