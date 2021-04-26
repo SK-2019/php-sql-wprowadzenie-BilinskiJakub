@@ -11,4 +11,5 @@
           
             <b>Relacje:</b>
             <a class="menu" href="/Relacje/autortytul.php">Autor-Tytuł</a>
+            <a class="menu" href="/Relacje/lekarzpacjent.php">Lekarz-Pacjent</a>
         
