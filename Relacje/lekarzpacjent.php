@@ -18,10 +18,10 @@
 </div>
 
 <?php
-                echo("<h1>Przychodnia</h1>");
+        require_once("../Assets/connect.php");
+                
+        echo("<h1>Przychodnia</h1>");
 
-
-                require_once("../connect.php");
 
                 $sql = ("SELECT * FROM lekarz");
                 echo("<h2>".$sql."</h2>");
