@@ -20,7 +20,7 @@
 <?php
         require_once("../Assets/connect.php");
         
-        echo("<h1>Salon Fryzjerski</h1>");
+        echo("<h1>SPA</h1>");
 
                 $sql = ("SELECT * FROM fryzjer");
                 echo("<h2>".$sql."</h2>");
