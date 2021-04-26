@@ -2,9 +2,7 @@
     <head>
         <link rel="stylesheet" href="/Assets/style.css">
     </head>
-<div class="container">
-    <div class="item colorRed">
-        <h1 class="title">Jakub Biliński</h1>
+    
     </div>
     <div class="sidenav">
          <?php include("../menu.php") ?>
