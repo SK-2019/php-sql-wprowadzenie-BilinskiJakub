@@ -3,7 +3,7 @@
   padding:0px;
 }
   .title {
-    color: rgb(233, 84, 84);
+    color: rgb(27, 25, 25);
     align-items:center
 
 }
@@ -62,7 +62,7 @@ tr:hover{background-color:rgb(151, 86, 39);}
   flex-direction: column;
 }
 .sidenav {
-  height: 100%; 
+  
   width: 0; 
   position: fixed; 
   z-index: 1; 

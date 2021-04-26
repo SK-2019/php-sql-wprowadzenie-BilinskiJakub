@@ -10,17 +10,17 @@
 </head>
 <body>
 
-</div>
-
-<div class="nav">
-        <?php include("menu.php") ?>
-
+<div class="sidenav">
+         <?php include("/menu.php") ?>
+        </div>
+    <div class="container">
+        <?php include("/Assets/header.php") ?>
 
 </div>
 
 <?php
 
-require_once("Assets/connect.php");
+require_once("/Assets/connect.php");
 $sql = 'SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and imie not like "%a"';
     echo("<h3>".$sql."</h3>");
     $conn = new mysqli("mysql-bilinski-jakub.alwaysdata.net","217212","haslo_testowe","bilinski-jakub_test");

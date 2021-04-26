@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="/Assets/style.css">
 </head>
 <body>
-<div class="nav">
-        <?php include("../menu.php") ?>
+<div class="sidenav">
+         <?php include("../menu.php") ?>
         </div>
+    <div class="container">
+        <?php include("../Assets/header.php") ?>
 
 </div>
 <?php

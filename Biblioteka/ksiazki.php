@@ -6,13 +6,14 @@
     <div class="item colorRed">
         <h1 class="title">Jakub Biliński</h1>
     </div>
-    <div class="nav">
-        <?php include("../menu.php") ?>    
+    <div class="sidenav">
+         <?php include("../menu.php") ?>
         </div>
-
-        <div class="item a">
+    <div class="container">
+        <?php include("../Assets/header.php") ?>
+</div>
 <?php
-require_once("Assets/connect.php");
+require_once("../Assets/connect.php");
 $sql ="Select * From biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id";
 echo("<li>".$sql);
 $result = $conn->query($sql);

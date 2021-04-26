@@ -8,21 +8,18 @@
     <link rel="stylesheet" href="/Assets/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="item colorRed">
-        Jakub Biliński 
-    </div>
-    <div class="nav">
+    
+    <div class="sidenav">
          <?php include("../menu.php") ?>
         </div>
-
-
+    <div class="container">
+        <?php include("../Assets/header.php") ?>
 
 </div>
-<div class="item colorGreen">
+
 <?php
 
-require_once("Assets/connect.php");
+require_once("../Assets/connect.php");
 $sql = ('SELECT * FROM bibliotekaAutor');
 echo("<h2>Autorzy</h2>");
 echo("<h3>".$sql."</h3>");
