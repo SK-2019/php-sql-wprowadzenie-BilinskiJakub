@@ -17,53 +17,64 @@
         <?php include("../Assets/header.php") ?>
 
 </div>
+
 <?php
-
             require_once("../Assets/connect.php");
-                echo("<h1>Szkoła</h1>");
 
-                $sql = ("SELECT * FROM nauczyciel");
-                echo("<h2>".$sql."</h2>");
-                $result=$conn->query($sql);
-                        echo("<table border=1>");
-                        echo("<th>id</th>");
-                        echo("<th>nauczyciel</th>");
+                echo("<h1>Biblioteka</h1>");
 
-                        while($row=$result->fetch_assoc()) {
-                                echo("<tr>");
-                                    echo("<td>".$row["id"]."</td><td>".$row["nauczyciel"]."</td>");
-                                echo("</tr>");
-                            }
-                        echo("</table>");
 
                 
-                $sql = ("SELECT * FROM klasa");
+
+                $sql = ("SELECT * FROM autor");
                 echo("<h2>".$sql."</h2>");
                 $result=$conn->query($sql);
+                
                         echo("<table border=1>");
                         echo("<th>id</th>");
-                        echo("<th>klasa</th>");
+                        echo("<th>autor</th>");
+    
 
                         while($row=$result->fetch_assoc()) {
                                 echo("<tr>");
-                                    echo("<td>".$row["id"]."</td><td>".$row["klasa"]."</td>");
+                                    echo("<td>".$row["id"]."</td><td>".$row["nazwisko"]."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
 
 
-                        $sql = ("SELECT * FROM nauczyciel, klasa, nauczyciel_klasa where nauczyciel_id = nauczyciel.id and klasa_id = klasa.id");
-                        echo("<h2>".$sql."</h2>");
-                        $result=$conn->query($sql);
-                                echo("<table border=1>");
-                                echo("<th>klasa</th>");
-                                echo("<th>nauczyciel</th>");
-        
-                                while($row=$result->fetch_assoc()) {
-                                        echo("<tr>");
-                                            echo("<td>".$row["klasa"]."</td><td>".$row["nauczyciel"]."</td>");
-                                        echo("</tr>");
-                                    }
-                                echo("</table>");
+                        $sql = ("SELECT * FROM tytul");
+                echo("<h2>".$sql."</h2>");
+                $result=$conn->query($sql);
+                
+                        echo("<table border=1>");
+                        echo("<th>id</th>");
+                        echo("<th>tytul</th>");
+    
 
-        ?>
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["id"]."</td><td>".$row["tytul"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+                $sql = ("SELECT * FROM autor, tytul, autor_tytul  where autor_id = autor.id and tytul_id = tytul.id");
+                echo("<h2>".$sql."</h2>");
+                $result=$conn->query($sql);
+                
+                        echo("<table border=1>");
+                        echo("<th>autor</th>");
+                        echo("<th>tytul</th>");
+    
+
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["nazwisko"]."</td><td>".$row["tytul"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+
+
+                        ?>
