@@ -63,7 +63,7 @@ tr:hover{background-color:rgb(151, 86, 39);}
 }
 .sidenav {
   
-  width: 0; 
+  width: 200px; 
   position: fixed; 
   z-index: 1; 
   top: 0;
