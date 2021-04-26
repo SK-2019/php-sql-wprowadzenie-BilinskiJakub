@@ -61,17 +61,27 @@ tr:hover{background-color:rgb(151, 86, 39);}
   justify-content: left;
   flex-direction: column;
 }
-
-.topnav a {
-  float: left;
-  color: #d6a8a8;
-  text-align: center;
-  padding: 14px 16px;
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgb(80, 74, 74); 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  color: #a18e8e;
+  display: block;
+  transition: 0.3s;
 }
-.topnav-left {
-  float: left;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 .menu:hover{
   background:rgba(220, 20, 60, 0.151);
