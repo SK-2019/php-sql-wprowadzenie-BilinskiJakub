@@ -1,0 +1,54 @@
+.obraz {
+    background-color: rgb(83, 31, 15);
+    margin: 10px;
+    padding: 0px;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    border: 0.5px solid black;
+  }
+
+  .zdj1 {
+      background-image: url(https://s2.tvp.pl/images2/b/7/c/uid_b7c6fc36f5f50ffd779a702b162914c81591034996859_width_1280_play_0_pos_0_gs_0_height_720_skoki-narciarskie-czeka-zmiana-jak-wielka-raczej-kosmetyczna-fot-getty.jpg);
+  }
+
+  .zdj1:hover {
+
+    background-image: url(https://s2.tvp.pl/images2/b/7/c/uid_b7c6fc36f5f50ffd779a702b162914c81591034996859_width_1280_play_0_pos_0_gs_0_height_720_skoki-narciarskie-czeka-zmiana-jak-wielka-raczej-kosmetyczna-fot-getty.jpg);
+  }
+
+  .zdj2 {
+      background-image: url(https://ocdn.eu/pulscms-transforms/1/XMNk9kpTURBXy84ZjlkYzVmZGQ1ZmJhMTMwYWVjZDY2ZWQyMjE1YjcxNy5qcGeTlQMAzIXNEL3NCWqTBc0DFM0BvJMJpjY3YzlhZAaBoTAB/dawid-kubacki.jpg);
+  }
+
+  .zdj2:hover {
+      background-image: url(https://ocdn.eu/pulscms-transforms/1/XMNk9kpTURBXy84ZjlkYzVmZGQ1ZmJhMTMwYWVjZDY2ZWQyMjE1YjcxNy5qcGeTlQMAzIXNEL3NCWqTBc0DFM0BvJMJpjY3YzlhZAaBoTAB/dawid-kubacki.jpg);
+  }
+
+.zdj3 {
+    background-image: url(https://www.radiomaryja.pl/wp-content/uploads/2020/03/polscy-skoczkowie.jpg);
+}
+
+.zdj3:hover {
+    background-image: url(https://www.radiomaryja.pl/wp-content/uploads/2020/03/polscy-skoczkowie.jpg);
+}
+
+.zdj4 {
+    background-image: url(https://i.iplsc.com/-/000AWD3GS0PIGQBG-C411.jpg);
+}
+
+.zdj4:hover {
+    background-image: url(https://i.iplsc.com/-/000AWD3GS0PIGQBG-C411.jpg);
+}
+
+.zdj5 {
+    background-image: url(https://s4.tvp.pl/images2/d/a/c/uid_dac32def052cd3e722c632832e838f611616155418615_width_1200_play_0_pos_0_gs_0_height_678_piotr-zyla-fot-getty-images.jpg);
+}
+
+.zdj5:hover {
+    background-image: url(https://s4.tvp.pl/images2/d/a/c/uid_dac32def052cd3e722c632832e838f611616155418615_width_1200_play_0_pos_0_gs_0_height_678_piotr-zyla-fot-getty-images.jpg);
+}
+
+.zdj1-nazwa {}
