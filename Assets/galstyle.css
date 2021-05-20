@@ -58,3 +58,9 @@
     display: block;
     height: 24px; 
 }
+
+.galrzad {
+      background-color: rgb(179, 179, 179);
+        display:flex;
+      
+}
