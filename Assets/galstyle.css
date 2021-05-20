@@ -1,13 +1,13 @@
-.galrzad {
+.photo {
     background-color: rgb(83, 31, 15);
     margin: 10px;
     padding: 0px;
-    width: 300px;
+    width: 320px;
     height: 200px;
     background-size: cover;
     background-position: center;
     transition: 0.5s;
-    border: 0.5px solid black;
+    border: 1px solid black;
   }
 
   .zdj1 {
