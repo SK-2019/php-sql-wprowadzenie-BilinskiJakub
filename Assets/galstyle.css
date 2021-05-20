@@ -51,4 +51,10 @@
     background-image: url(https://s4.tvp.pl/images2/d/a/c/uid_dac32def052cd3e722c632832e838f611616155418615_width_1200_play_0_pos_0_gs_0_height_678_piotr-zyla-fot-getty-images.jpg);
 }
 
-.zdj1-nazwa {}
+.zdj1-nazwa {
+ background-color: rgb(224, 188, 188);
+    color: rgb(19, 15, 15);
+    padding: 5px;
+    display: block;
+    height: 24px; 
+}
