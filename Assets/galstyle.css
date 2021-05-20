@@ -1,3 +1,6 @@
+body{
+    background:rgb(160, 148, 148);
+}
 .photo {
     background-color: rgb(83, 31, 15);
     margin: 10px;
@@ -49,8 +52,41 @@
 
 .zdj5:hover {
     background-image: url(https://s4.tvp.pl/images2/d/a/c/uid_dac32def052cd3e722c632832e838f611616155418615_width_1200_play_0_pos_0_gs_0_height_678_piotr-zyla-fot-getty-images.jpg);
+
 }
 
+.zdj6 {
+    background-image: url(https://www.skijumping.pl/content/images/news/powieksz/kranjec_lot_2009-03-19_12-35-25.jpg);
+}
+
+.zdj6:hover {
+    background-image: url(https://www.skijumping.pl/content/images/news/powieksz/kranjec_lot_2009-03-19_12-35-25.jpg);
+}
+.zdj7 {
+    background-image: url(https://s8.tvp.pl/images2/8/a/d/uid_8ad9684b777e4720d0519347ac24fa4d1549130588285_width_993_play_0_pos_0_gs_0_height_559.jpg);
+}
+.zdj7:hover {
+    background-image: url(https://s8.tvp.pl/images2/8/a/d/uid_8ad9684b777e4720d0519347ac24fa4d1549130588285_width_993_play_0_pos_0_gs_0_height_559.jpg);
+}
+.zdj8 {
+    background-image: url(https://ocdn.eu/pulscms-transforms/1/owyk9kpTURBXy81NWVjNjU3NGIzZjRjN2JlNTYxOTkzNzY3N2ExNTE1NS5qcGeUlQMAVc0QAM0JAJMFzQMUzQG8lQfZMi9wdWxzY21zL01EQV8vMjMzN2M5ZmQ2YjkzMWVlNmNiMGQyM2RjYmEyNThhOWQucG5nAMIAkwmmOTU5ZDdmBoGhMAE/tom-hilde-w-locie.jpg);
+}
+
+.zdj8:hover {
+    background-image: url(https://ocdn.eu/pulscms-transforms/1/owyk9kpTURBXy81NWVjNjU3NGIzZjRjN2JlNTYxOTkzNzY3N2ExNTE1NS5qcGeUlQMAVc0QAM0JAJMFzQMUzQG8lQfZMi9wdWxzY21zL01EQV8vMjMzN2M5ZmQ2YjkzMWVlNmNiMGQyM2RjYmEyNThhOWQucG5nAMIAkwmmOTU5ZDdmBoGhMAE/tom-hilde-w-locie.jpg);
+}
+.zdj9 {
+    background-image: url(https://ocdn.eu/pulscms-transforms/1/Bz3k9kuTURBXy8xMjAxN2Y2MC0xMTRjLTQ3YjctODBjYi1kOTg0ODMzZjhjMjQuanBlZ5OVAwB3zQ8gzQiCkwXNAxTNAbyTCaZhM2Y2YTUGgaEwAQ/timi-zajc.jpg);
+}
+.zdj9:hover {
+    background-image: url(https://ocdn.eu/pulscms-transforms/1/Bz3k9kuTURBXy8xMjAxN2Y2MC0xMTRjLTQ3YjctODBjYi1kOTg0ODMzZjhjMjQuanBlZ5OVAwB3zQ8gzQiCkwXNAxTNAbyTCaZhM2Y2YTUGgaEwAQ/timi-zajc.jpg);
+}
+.zdj10 {
+    background-image: url(https://i.iplsc.com/-/0006C6SDO8659VOP-C125-F4.jpg);
+}
+.zdj10:hover {
+    background-image: url(https://i.iplsc.com/-/0006C6SDO8659VOP-C125-F4.jpg);
+}
 .zdj1-nazwa {
  background-color: rgb(224, 188, 188);
     color: rgb(19, 15, 15);
